@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apalya.myplex"
+    android:versionCode="10"
+    android:versionName="2.0.10" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>    
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+	 <permission android:name="com.apalya.myplex.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.apalya.myplex.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+   
+    
+    <application
+        android:name="com.apalya.myplex.data.myplexapplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"		
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="@string/config.crashlytics.ApiKey" />
+
+        <activity
+            android:name="com.apalya.myplex.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DownloadStatus"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TwitterWebView"
+            android:label="myplex" />
+        <activity
+            android:name=".SignUpActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+        <activity android:name=".SubscriptionView"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.apalya.myplex.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >            
+        </activity>
+        <activity
+            android:name="com.apalya.myplex.tablet.MultiPaneActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.apalya.myplex.tablet.TabletCardDetails"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+		
+       
+        
+        <receiver android:name="com.apalya.myplex.receivers.DownloadManagerReceiver">
+  			<intent-filter>
+    			 <action android:name="android.intent.action.DOWNLOAD_COMPLETE"></action>
+     			 
+  			</intent-filter>
+		</receiver>
+
+        <service android:name="com.apalya.myplex.receivers.DownloadServiceReceiver"></service>
+        
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/config.fbapp_id" />
+
+        <meta-data
+      			android:name="com.mixpanel.android.MPConfig.AutoCheckForSurveys"
+      			android:value="false" />
+        <activity android:name="com.mixpanel.android.surveys.SurveyActivity" />
+        
+        <receiver android:name="com.mixpanel.android.mpmetrics.GCMReceiver"
+              android:permission="com.google.android.c2dm.permission.SEND" >
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            <category android:name="com.apalya.myplex" />
+        </intent-filter>
+    </receiver>
+
+    
+   <service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+	<receiver android:name="com.apalya.myplex.receivers.CustomCampaignTrackingReceiver" android:exported="true" >
+  		<intent-filter>
+    		<action android:name="com.android.vending.INSTALL_REFERRER" />
+  		</intent-filter>
+	</receiver>
+
+        <activity android:name="LiveScoreWebView"></activity>
+
+        
+        <receiver android:name="com.apalya.myplex.receivers.ConnectivityReceiver" >
+        	<intent-filter>
+            	<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        	</intent-filter>
+    	</receiver>
+        <receiver android:name=".receivers.ReminderReceiver"></receiver>
+    
+    </application>
+    <!--  <receiver android:name="com.apalya.myplex.widget.MyplexWidgetProvider">
+         <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+         </intent-filter>
+          <meta-data  android:name="android.appwidget.provider"
+          			 android:resource="@xml/widget_info" />
+    </receiver>
+    <activity android:name=".widget.WidgetHandlerActivity">
+        <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </intent-filter>
+    </activity> -->
+
+</manifest>

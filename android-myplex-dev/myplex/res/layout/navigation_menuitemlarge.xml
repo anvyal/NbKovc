@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/drawer_list_item_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/radiohead_in_rainbows" />
+
+        <TextView
+            android:id="@+id/drawer_list_item_image_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/profile_noimage"
+            android:textColor="#1E2125"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/drawer_list_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:textColor="#1E2125"
+            android:textSize="@dimen/textsize_16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="2dp"
+        android:background="#B7B9BC"
+        android:paddingTop="50dp" />
+
+</LinearLayout>

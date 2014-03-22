@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cardHeight"
+    android:background="@drawable/card_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/card_title_delete"
+        android:layout_width="38dp"
+        android:layout_height="@dimen/cardtitleheight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/card_title_deleteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/card_delete"
+            android:textColor="#343433"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_title_favlayout"
+        android:layout_width="38dp"
+        android:layout_height="@dimen/cardtitleheight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/card_title_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/card_filledheart"
+            android:textColor="#343433"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/card_title_fav_progress"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cardtitleheight"
+        android:layout_toLeftOf="@+id/card_title_favlayout"
+        android:layout_toRightOf="@+id/card_title_delete"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/card_title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="@dimen/margin_gap_4"
+            android:paddingRight="@dimen/margin_gap_4"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#343433"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <com.apalya.myplex.data.CardImageView
+        android:id="@+id/card_preview_image"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cardimageheight"
+        android:layout_marginTop="@dimen/cardtitleheight"
+        android:background="#000000"
+        android:scaleType="centerCrop" />
+
+    <!--
+         <View
+        android:id="@+id/card_rent_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/card_rent_layout"
+        android:background="#D8D8D7" />
+
+    -->
+
+    <ImageView
+        android:id="@+id/card_play"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignRight="@+id/card_preview_image"
+        android:layout_alignTop="@+id/card_preview_image"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cardinfoselector"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/card_rent_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cardmoreinfoheight"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/cardtitleplayandstatusheight"
+        android:background="@drawable/card_priceblock_bg" >
+
+        <TextView
+            android:id="@+id/card_rent_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#6b6b6b"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_status_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cardstatusheight"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/cardtitleandplayheight"
+        android:background="@drawable/card_statusblock_bg" >
+
+        <TextView
+            android:id="@+id/card_status_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/card_comment"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/card_status_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="14dp"
+            android:text="@string/card_people"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/card_download_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:maxWidth="60dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/card_status_people_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/card_status_people"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/card_status_comments_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/card_status_comments"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/card_download_progressBar"
+        style="@style/CustomProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/card_status_layout"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2010-present Facebook.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources>
+ 
+    <!-- <string name="app_name">myplex</string> -->
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+   
+    <string name="send_request">Send Request</string>
+    <string name="share">share</string>
+    <string name="logout">logout</string>
+    <string name="email">email:</string>
+    <string name="title">myplex</string>
+    <string name="required">required</string>
+    <string name="password">password:</string>
+    <string name="facebook">sign In with facebook</string>
+    <string name="google">sign In with google+</string>
+    <string name="letme">browse as guest</string>
+    <string name="progress_message">loading &#8230;</string>
+    <string name="or">or</string>
+    <string name="phone">phone:</string>
+    <string name="login">login</string>
+    <string name="fname">full name:</string>
+    <string name="uName">username:</string>
+    <string name="msgUpdate">receive SMS updates</string>
+    <string name="mailUpdate">receive mail updates</string>
+    <string name="signup">join myplex</string>
+    <string name="submit">continue to Myplex</string>
+    <string name="hinttextemail">"e-mail address"</string>
+    <string name="hinttextphone">10 digit mobile number</string>
+    <string name="hinttextpwd">password</string>
+    <string name="hinttextname">display name</string>
+    <string name="forgetPwd">forgot password? let\'s fix it here</string>
+    <string name="userCancelled">user has cancelled the request</string>
+    <string name="send_to">share via</string>
+    <string name="carddetailcommentsection_editcomment">add a comment</string>
+    <string name="carddetailcommentsection_editreview">add a review</string>
+    <string name="tnc">"By creating an account and signing up to myplex, I accept the Terms of Service and Privacy Policy"</string>
+    <string name="carddetailsectionheader_comment">comments</string>
+    <string name="carddetailsectionheader_credits">credits</string>
+    <string name="carddetailsectionheader_description">description</string>
+    <string name="carddetailsectionheader_myplexdescription">myplex description</string>
+    <string name="carddetailsectionheader_rate">rate</string>
+    <string name="carddetailsectionheader_relatedMultimedia">related multimedia</string>
+    <string name="pricepopupdiscount">off</string>
+    <string name="pricepopuprent">rent</string>
+    <string name="carddetailsectionheader_reviews">reviews </string>
+    <string name="navigationmenu_settings">settings</string>
+    <string name="card_delete">&#x2421;</string>
+    <string name="card_heart">&#xE1A2;</string>
+    <string name="card_filledheart">&#x2665;</string>
+    <string name="card_comment">&#xE390;</string>
+    <string name="card_people">&#xE972;</string>
+    <string name="card_play">&#x25B6;</string>
+    <string name="card_pause">&#xE8A0;</string>
+    <string name="card_duration">&#x1F4F9;</string>
+    <string name="price_rupeecode">&#x20B9; </string>
+    <string name="rating_low">&#x2639; </string>
+    <string name="rating_high">&#x263B; </string>
+    <string name="toast_warning">&#x26A0; </string>
+    <string name="toast_info">&#x2139; </string>
+    <string name="actionbar_filter">&#x25E2; </string>
+    <string name="card_play_font">&#xE8B1;</string>
+    <string name="card_trailer_font">&#xE8B0;</string>
+    <string name="new_arrival_indicator">&#x2691;</string>
+    <string name="profile_noimage">&#xE420;</string>
+    <string name="ratingheading">rate this movie </string>
+    <string name="ratingmessageheading">add a movie review </string>
+    <string name="ratingmessagehint">add a review</string>
+    <string name="commentpopupheading">add a comment</string>
+    <string name="commentpopuphint">add a comment</string>
+    <string name="feedbackheading">rate myplex </string>
+    <string name="feedbackmessageheading">please share your experience </string>
+    <string name="feedbackmessagehint">feedback on myplex</string>
+    <string name="feedbackcancelbutton">cancel</string>
+    <string name="feedbackokbutton">ok</string>
+    <string name="subscriptionconfirmationdialogtext">proceed with the payment?</string>
+    <string name="playhint">play</string>
+    <string name="trailerhint">play trailer</string>
+    
+    <string name="cardstatusfree">free</string>
+    <string name="cardstatustempfree">watch now for free</string>
+    <string name="cardstatuspaid">watch now</string>
+    
+    <string name="lastwatchedcontent">last watched content</string>
+    <string name="similarcontent">similar content</string>
+
+    <string name="listempty">no data</string>
+    
+    <string name="userprofilename">profilename</string>
+    <string name="userpic">userpicurl</string>
+    
+    <string-array name="hometabletanim">
+        <item>Bottom-In</item>
+        <item>Right-In</item>
+        <item>Left-In</item>
+        <item>Scale</item>
+        <item>Alpha-In</item>
+    </string-array>
+    	<string name="search_hint">search&#8230;</string>
+    <string name="tag1">1</string>
+	<string name="tag2">2</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+     <string name="osname">Android</string>
+     
+     <!--Login/Singup errors-->
+    <string name="interneterr">internet connection is not active</string>
+    <string name="loginerr">unable to login.\n"browse as guest".</string>
+    <string name="loginconerr">device registration failed. relaunch myplex.</string>
+    <string name="wrongemail">invalid e-mail address or password</string>
+    <string name="wrongemailhint">enter valid e-mail address!</string>
+    <string name="usernamehint">username is required</string>
+    <string name="passwordhint">password is required</string>
+    <string name="wrongcredentials">username and password are required</string>
+    <!--Login/Singup errors-->
+    <string name="downloadserror">no downloads yet… \nlet\'s start one, can watch it while downloading itself</string>
+    <string name="searcherror">unable to find results … \ntry one of our suggested search terms?</string>
+    <string name="purchaseserror">no purchases yet … \nlet\'s change that!</string>
+
+    
+    <string name="clientsecret">ApalyaAndroid</string>
+    <!-- URLS -->
+    <!-- <string name="url">http://alpha.myplex.in:8866/user/v2/</string> -->
+    <string name="devRegPath">registerDevice</string>
+    <string name="genKeyReqPath">generateKey</string>
+    <string name="signin">signIn</string>
+    <string name="signuppath">signUp</string>
+    <string name="signoutpath">signOut</string>
+    <string name="forgotpassword">forgotPassword</string>
+    <string name="fbloginpath">social/login/FB</string>
+    <string name="gplusloginpath">social/login/Google</string>
+    <string name="getVideoPathUrl">generateKey</string>
+    <!-- URLS -->
+    <!-- P.storage --> 
+    <string name="encryptkey">encrypt_random_key</string>
+    <string name="devclientkey">devClientKey</string>
+	<string name="devclientdevid">devClientDevId</string>
+	<string name="devclientkeyexp">devClientKeyExp</string>
+	<string name="devusername">username</string>
+	<string name="devpassword">password</string>
+	
+	<!-- P.storage -->
+    
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+    <string name="com_facebook_loginview_log_out_button">התנתק</string>
+    <string name="com_facebook_loginview_log_in_button">התחבר לפייסבוק</string>
+    <string name="com_facebook_loginview_logged_in_as">מחובר בשם: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">מחובר באמצעות פייסבוק</string>
+    <string name="com_facebook_loginview_log_out_action">התנתק</string>
+    <string name="com_facebook_loginview_cancel_action">בטל</string>
+    <string name="com_facebook_logo_content_description">פייסבוק לוגו</string>
+    <string name="com_facebook_usersettingsfragment_log_in_button">התחבר&#8230;</string>
+    <string name="com_facebook_usersettingsfragment_logged_in">מחובר</string>
+    <string name="com_facebook_usersettingsfragment_not_logged_in">לא מחובר</string>
+    <string name="com_facebook_placepicker_subtitle_format">%1$s • %2$,d היו פה</string>
+    <string name="com_facebook_placepicker_subtitle_catetory_only_format">%1$s</string>
+    <string name="com_facebook_placepicker_subtitle_were_here_only_format">%1$,d היו פה</string>
+    <string name="com_facebook_picker_done_button_text">בצע</string>
+    <string name="com_facebook_choose_friends">בחר חברים</string>
+    <string name="com_facebook_nearby">קרוב אליי</string>
+    <string name="com_facebook_loading">..מעלה</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest שגיאת</string>
+    <string name="com_facebook_internet_permission_error_message">ההתחברות לתצוגת אתר דורשת אישור אינטרנט</string>
+    <string name="com_facebook_requesterror_web_login">.כדי לאפשר מחדש לאפליקציה להתחבר עם פייסבוק https://www.facebook.com או https://m.facebook.com אנא היכנס דרך</string>
+    <string name="com_facebook_requesterror_relogin">.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה</string>
+    <string name="com_facebook_requesterror_password_changed">.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק</string>
+    <string name="com_facebook_requesterror_reconnect">.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק</string>
+    <string name="com_facebook_requesterror_permissions">.חיבור האפליקציה עם פייסבוק נכשל בשל הרשאות לא מספקות, אנא הענק הרשאות לאפליקציה בכדי שהפעולה תוכל להתבצע</string>
+    <string name="com_facebook_dialogloginactivity_ok_button">אישור</string>
+</resources>

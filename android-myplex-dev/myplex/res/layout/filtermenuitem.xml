@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/filtermenuicon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/filtermenutext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/filtermenuicon"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/filtermenuicon"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="sadsdaf"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/carddetails_bg" >
+
+    <RelativeLayout
+        android:id="@+id/carddetailmedia_expandlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/margin_gap_12" >
+
+        <ImageView
+            android:contentDescription="@string/hello_world"
+            android:id="@+id/carddetailmedia_expand"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:src="@drawable/icondown" />
+
+        <ProgressBar
+            android:id="@+id/carddetailmedia_expand_progress"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/carddetailmedia_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_gap_12"
+        android:layout_marginTop="@dimen/margin_gap_12"
+        android:singleLine="true"
+        android:text="@string/carddetailsectionheader_relatedMultimedia"
+        android:textColor="#4b4b4b"
+        android:textSize="@dimen/textsize_16" />
+
+    <LinearLayout
+        android:id="@+id/carddetailmedia_contentlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carddetailmedia_title"
+        android:layout_marginLeft="@dimen/margin_gap_12"
+        android:layout_marginTop="@dimen/margin_gap_12"
+        android:animateLayoutChanges="true"
+        android:layout_toLeftOf="@+id/carddetailmedia_expandlayout"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

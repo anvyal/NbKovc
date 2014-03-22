@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parentlayout"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/searchlayoutinclude"
+            android:layout_height="50dp"
+            layout="@layout/searchlayout"
+            android:visibility="gone" >
+
+        </include>
+
+        <RelativeLayout
+            android:id="@+id/drawerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tablayoutchanger"
+            android:background="@drawable/navigation" >
+
+            <TextView
+                android:id="@+id/searchBox"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:drawableLeft="@drawable/iconsearchgrey"
+                android:gravity="center_vertical"
+                android:text="@string/search_hint_small"
+                android:textSize="@dimen/textsize_14"
+                android:background="#FFFFFF" />
+
+            <ListView
+                android:id="@+id/left_drawer"
+                android:layout_width="280dp"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/searchBox"
+                android:layout_gravity="start"
+                android:background="#E0E0E0"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@drawable/listitem_selector"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/tablayoutchanger"
+            android:layout_width="fill_parent"
+            
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/pulluptab"
+            android:gravity="bottom"
+            android:visibility="gone" >
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView android:layout_width="6dp" android:layout_height="match_parent" android:background="@drawable/layoutseparator"/>
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
